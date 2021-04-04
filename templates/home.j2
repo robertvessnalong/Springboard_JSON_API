@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Cupcakes</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="display-3">Cupcakes</h1>
+                 <small class="text-muted">Cupcake List</small>
+                 <ul id="cupcakes-list" class="list-group d-flex flex-row">
+                 </ul>
+                <div class="error-message">
+                    <div id="alert" class="alert alert-danger"></div>
+                </div>
+                 <form id="cupcake-form">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="flavor">Flavor</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" id="flavor" placeholder="Flavor of Cupcake">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="size">Size</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" id="size" placeholder="Size of Cupcake">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rating">Rating</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" id="rating" placeholder="Rating of Cupcake">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="image">Image</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" id="image" placeholder="Image URL of Cupcake">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Add Cupcake</button>
+                 </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="static/scripts.js"></script>
+  </body>
+</html>
